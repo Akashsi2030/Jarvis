@@ -216,7 +216,7 @@ if __name__ == "__main__":
             os.system("taskkill /f /im notepad.exe")
             speak("Closing Notepad")
         
-        elif "open cmd" in query:
+        elif "open cmd" or "Command Prompt" in query:
             path = "C:\\Windows\\System32\\cmd.exe"
             os.startfile(path)
             speak("Opening Command Prompt")
